@@ -1,0 +1,56 @@
+.cardUno {
+	@include cards;
+	transform: translateX(0);
+	transition: transform cubic-bezier(.36,-0.12,.57,1.32) 1s;
+
+	h2 {
+		color: #161718;
+	}
+
+	.iconos {
+		@include flexbox;
+	}
+
+	.icono {
+		@include flexbox;
+		margin-right: 1rem;
+		width: 35px;
+		height: 35px;
+		font-size: 1.2rem;
+		border-radius: 50%;
+		@extend %sombraIconos;
+		box-shadow: 0 0 1px 1px #000000;
+	}
+
+	.formulario {
+		@include flexbox;
+		flex-direction: column;
+	}
+
+	input {
+		width: 240px;
+		padding: .7rem;
+		padding-left: 1rem;
+		background-color: #EEEDEF;
+		border: none;
+		outline: none;
+		transition: box-shadow .2s ease-in;
+		margin-bottom: 1rem;
+		
+		&:focus {
+			@extend %sombraInputs;
+		}
+	}
+
+	button {
+		@include boton;
+		background-color: #FF412C;
+	}	
+}
+
+.card-uno-mover {
+	transform: translateX(100%);
+	border-radius: 0;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}

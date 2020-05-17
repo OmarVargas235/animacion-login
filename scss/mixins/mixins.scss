@@ -1,0 +1,50 @@
+@mixin flexbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin cards {
+	text-align: center;
+	padding: 2rem 3rem;
+	padding-bottom: 3rem;
+
+	h2 {
+		font-weight: bold;
+		font-size: 2rem;
+	}
+}
+
+@mixin boton {
+	padding: 13px 2.5rem;
+	font-size: 1rem;
+	color: white;
+	border-radius: 40px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+
+	&:active {
+		-webkit-box-shadow: 1px 1px 4px 2px #696469;
+		-moz-box-shadow: 1px 1px 4px 2px #696469;
+		box-shadow: 1px 1px 4px 2px #696469;
+	}
+}
+
+%sombraContenedorPadre {
+	-webkit-box-shadow: -2px 3px 19px 5px rgba(128,124,128,1);
+	-moz-box-shadow: -2px 3px 19px 5px rgba(128,124,128,1);
+	box-shadow: -2px 3px 19px 5px rgba(128,124,128,1);
+}
+
+%sombraIconos {
+	-webkit-box-shadow: 1px 1px 6px 3px rgba(179,170,179,1);
+	-moz-box-shadow: 1px 1px 6px 3px rgba(179,170,179,1);
+	box-shadow: 1px 1px 6px 3px rgba(179,170,179,1);
+}
+
+%sombraInputs {
+	-webkit-box-shadow: 1px 1px 5px 3px #696469;
+	-moz-box-shadow: 1px 1px 5px 3px #696469;
+	box-shadow: 1px 1px 5px 3px #696469;
+}

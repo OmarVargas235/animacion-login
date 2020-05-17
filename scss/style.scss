@@ -1,0 +1,22 @@
+@import 'mixins/mixins.scss';
+@import 'cardUno/cardUno.scss';
+@import 'cardDos/cardDos.scss';
+
+body {
+	min-height: 100vh;
+	@include flexbox;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+	@extend %sombraContenedorPadre;
+	@include flexbox;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+@media (max-width: 840px) {
+	body {
+		padding: 0 1rem;
+	}
+}
